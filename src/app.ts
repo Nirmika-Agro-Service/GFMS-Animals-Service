@@ -22,7 +22,7 @@ app.use("/breeds", breedRouter);
 app.use("/vaccines", vaccineRouter);
 app.use("/dashboard", dashboardRouter);
 
-app.get("/", (req, res) => {
+app.get("/", (req:any, res:any) => {
   res.json({ data: "Auto Deploy" });
 });
 
